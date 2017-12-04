@@ -1,0 +1,26 @@
+{
+  "name": "docker-try",
+  "version": "1.0.0",
+  "description": "Node API with connection to MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "mon": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "Miguel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.0.1"
+  }
+}

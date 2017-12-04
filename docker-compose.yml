@@ -1,0 +1,42 @@
+version: '3'
+services:
+
+  app:
+    image: node:latest
+    working_dir: /usr/src/frontend/
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile-frontend
+    container_name: hostmaker-fe
+    command: yarn start
+    volumes:
+      - ./frontend/:/usr/src/frontend/
+    ports:
+      - "5000:5000"
+
+  web:
+    image: node:latest
+    working_dir: /usr/src/server/
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: hostmaker
+    command: yarn start
+    volumes:
+      - ./backend:/usr/src/server/
+    ports:
+      - "4000:4000"
+    depends_on:
+      - database
+
+  database:
+    image: mysql:5.5
+    container_name: mysql.dev
+    command: mysqld --user=root --verbose
+    volumes:
+      - ./mysql:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_DATABASE: hostmaker
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3306:3306"
