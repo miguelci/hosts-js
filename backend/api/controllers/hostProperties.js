@@ -64,8 +64,7 @@ exports.addProperty = (req, res) => {
   let errors = PropertyRules.evaluateRules(property);
   errors = errors.concat(AddressRules.evaluateRules(address));
 
-  //LinkRules.evaluateRules(property, result => {
-    let result = [];
+  LinkRules.evaluateRules(property, result => {
     errors = errors.concat(result);
 
     if(errors.length) {
@@ -87,7 +86,7 @@ exports.addProperty = (req, res) => {
         return res.status(BAD_REQUEST).json({'message': result.message});
       });
     });
-  //});
+  });
 }
 
 exports.deleteProperty = (req, res) => {
@@ -116,8 +115,7 @@ exports.updateProperty = (req, res) => {
   let errors = PropertyRules.evaluateRules(property);
   errors = errors.concat(AddressRules.evaluateRules(address));
 
-  //LinkRules.evaluateRules(property, result => {
-    let result = [];
+  LinkRules.evaluateRules(property, result => {
     errors = errors.concat(result);
 
     if(errors.length) {
@@ -137,7 +135,7 @@ exports.updateProperty = (req, res) => {
         return res.status(BAD_REQUEST).json({'message': result.message});
       });
     });
-  //});
+  });
 }
 
 exports.hostPropertyVersionsById = (req, res) => {
