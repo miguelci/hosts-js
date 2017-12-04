@@ -6,6 +6,7 @@
 
 ## Requirements
 - Docker
+ - https://docs.docker.com/compose/
 - Yarn
 - Port 4000 and 5000 not being used
 
@@ -16,6 +17,7 @@ cd backend/
 yarn
 cd ../frontend/
 yarn
+cd ..
 docker-compose build
 docker-compose up (or with -d)
 (wait for it to load everything)
