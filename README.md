@@ -22,6 +22,14 @@ docker-compose up (or -d)
 open http://localhost:5000
 ```
 
+## Tests
+
+- On the backend folder, there is a test for the hosts
+```
+cd backend/
+npm test
+```
+
 ## Api
 
 - The api will be available on http://localhost:5000
