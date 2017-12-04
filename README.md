@@ -39,20 +39,20 @@ npm test
 
 #### Hosts resources
 
-- **[<code>GET</code> hosts]
-- **[<code>POST</code> hosts]
+- **[<code>GET</code> hosts]**
+- **[<code>POST</code> hosts]**
 
-- **[<code>GET</code> hosts/:id]
-- **[<code>DELETE</code> hosts/:id]
-- **[<code>PUT</code> hosts/:id]
+- **[<code>GET</code> hosts/:id]**
+- **[<code>DELETE</code> hosts/:id]**
+- **[<code>PUT</code> hosts/:id]**
 
-- **[<code>GET</code> hosts/dashboard]
+- **[<code>GET</code> hosts/dashboard]**
 
-- **[<code>GET</code> hosts/:id/properties]
-- **[<code>POST</code> hosts/:id/properties]
+- **[<code>GET</code> hosts/:id/properties]**
+- **[<code>POST</code> hosts/:id/properties]**
 
-- **[<code>GET</code> hosts/:id/properties/:pid]
-- **[<code>DELETE</code> hosts/:id/properties/:pid]
-- **[<code>PUT</code> hosts/:id/properties/:pid]
+- **[<code>GET</code> hosts/:id/properties/:pid]**
+- **[<code>DELETE</code> hosts/:id/properties/:pid]**
+- **[<code>PUT</code> hosts/:id/properties/:pid]**
 
-- **[<code>GET</code> hosts/:id/properties/:pid/versions]
+- **[<code>GET</code> hosts/:id/properties/:pid/versions]**
