@@ -17,7 +17,7 @@ yarn
 cd ../frontend/
 yarn
 docker-compose build
-docker-compose up (or -d)
+docker-compose up (or with -d)
 (wait for it to load everything)
 open http://localhost:5000
 ```
@@ -56,3 +56,8 @@ npm test
 - **PUT/hosts/:id/properties/:pid**
 
 - **GET/hosts/:id/properties/:pid/versions**
+
+## Note 
+- When adding a property, the field Airbnb Id needs to be from a real link
+- A Rule was added that fetches for the link and decides what to do, based on the status code
+- After some requests, the app can be blocked from making requests
