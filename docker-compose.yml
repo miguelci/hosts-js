@@ -7,7 +7,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile-frontend
-    container_name: hostmaker-fe
+    container_name: hosts-fe
     command: yarn start
     volumes:
       - ./frontend/:/usr/src/frontend/
@@ -20,7 +20,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: hostmaker
+    container_name: hosts
     command: yarn start
     volumes:
       - ./backend:/usr/src/server/
@@ -36,7 +36,7 @@ services:
     volumes:
       - ./mysql:/docker-entrypoint-initdb.d
     environment:
-      MYSQL_DATABASE: hostmaker
+      MYSQL_DATABASE: hosts
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     ports:
       - "3306:3306"

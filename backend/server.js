@@ -12,7 +12,7 @@ app.use(bodyParser.json()); // Body parser use JSON data
 
 app.use(cors({
   'origin': '*',
-  'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE'
+  'methods': 'GET,PUT,POST,DELETE'
 }));
 
 var routes = require('./api/routes/routes');

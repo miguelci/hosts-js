@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `hostmaker`;
-USE `hostmaker`;
+CREATE DATABASE IF NOT EXISTS `hosts`;
+USE `hosts`;
 
 CREATE TABLE `hosts` (
   `id` int(11) AUTO_INCREMENT,

@@ -5,7 +5,7 @@ const {OK, CREATED, NO_CONTENT, BAD_REQUEST, SERVER_ERROR} = require('../status'
 const HostRules = require('./validation/host');
 
 exports.index = (req, res) => {
-  res.json("hostmaker api exercise")
+  res.json("hosts api")
 };
 
 exports.dashboard = (req, res) => {

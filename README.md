@@ -1,4 +1,4 @@
-# Hostmaker Exercise
+# Hosts Exercise
 
 * Rest Api with Node, Express and MySql
 * React on the frontend

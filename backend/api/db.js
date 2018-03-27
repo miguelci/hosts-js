@@ -51,6 +51,6 @@ function getConnection(){
        host : 'mysql.dev',
        user : 'root',
        password : '',
-       database : 'hostmaker',
+       database : 'hosts',
    })
 }
